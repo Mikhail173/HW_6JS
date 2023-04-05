@@ -41,12 +41,12 @@ const content = document.getElementsByClassName("title");
 console.log(content);
 
 //6. Получите элемент с классом "card-title" и выведите его родительский узел в консоль.
-const item = document.getElementsByClassName("card-title");
-const parent = item.parentNode;
+const item = document.querySelector("card-title");
+const parent = item.parentElement;
 console.log(parent);
 
 //7. Создайте тег, запишите внутри него текст "Привет" и добавьте созданный тег в начало элемента, который имеет класс "card".
-const articleDiv = document.querySelector("div.article");
+const articleDiv = document.querySelector("div.card");
 const elem = document.createElement("h2");
 const elemText = document.createTextNode("Привет");
 elem.appendChild(elemText);
